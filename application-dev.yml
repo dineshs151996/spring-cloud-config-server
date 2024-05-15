@@ -1,6 +1,12 @@
 spring:
   application:
     name: CONFIG-SERVER-DEV
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    enabled: 'true'
+    path: /swagger-ui.html
 eureka:
   client:
     register-with-eureka: true
