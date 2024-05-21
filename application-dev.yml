@@ -1,4 +1,16 @@
 spring:
+   application:
+   datasource:
+      driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+      password: Passw0rd@1234567
+      url: jdbc:sqlserver://optimusdevmi.a59544804564.database.windows.net; databaseName=optimus-sql-dev
+      username: optimus
+   jpa:
+      database-platform: org.hibernate.dialect.SQLServer2012Dialect
+      hibernate:
+        ddl-auto: none
+      show-sql: true
+spring:
   application:
     name: CONFIG-SERVER-DEV
 springdoc:
